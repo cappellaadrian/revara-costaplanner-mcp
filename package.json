@@ -1,0 +1,43 @@
+{
+  "name": "revara-costaplanner-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "revara-costaplanner-mcp": "src/index.js"
+  },
+  "description": "MCP server for Costa Rica structural engineering. Bridges any Model Context Protocol client (Claude Desktop, Cursor, Cline, Continue, Zed, ...) to the deployed Costaplanner CSCR-10 / ACI 318 design engine. 19 tools.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "structural-engineering",
+    "costa-rica",
+    "cscr-10",
+    "aci-318",
+    "aec",
+    "construction",
+    "claude",
+    "cursor",
+    "ai-agent"
+  ],
+  "author": "Adrian Cappella",
+  "license": "MIT",
+  "homepage": "https://github.com/cappellaadrian/revara-costaplanner-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cappellaadrian/revara-costaplanner-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cappellaadrian/revara-costaplanner-mcp/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.0"
+  }
+}
