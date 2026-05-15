@@ -1,6 +1,6 @@
 # revara-costaplanner-mcp
 
-Structural engineering MCP server for Costa Rica. Bridges any **Model Context Protocol** client (Claude Desktop, Cursor, Cline, Continue, Zed, or anything else that speaks MCP) to the deployed [Costaplanner](https://costaplanner.vercel.app) design engine.
+Structural engineering MCP server for Costa Rica. Bridges any **Model Context Protocol** client (Claude Desktop, Cursor, Cline, Continue, Zed, or anything else that speaks MCP) to the deployed [Costaplanner](https://costaplanner-api.vercel.app) design engine.
 
 19 tools covering CSCR-10 Rev. 2014 + ACI 318-14 + INTE C85:2017 — the only MCP server in the AEC ecosystem that ships **production-grade structural code design** out of the box.
 
@@ -145,7 +145,7 @@ In `~/.config/zed/settings.json`:
 
 | Variable | Default | Purpose |
 |---|---|---|
-| `COSTAPLANNER_BASE_URL` | `https://costaplanner.vercel.app` | Override if you self-host the calc engine |
+| `COSTAPLANNER_BASE_URL` | `https://costaplanner-api.vercel.app` | Override if you self-host the calc engine |
 
 ## Quick smoke test
 
@@ -170,7 +170,7 @@ If you want to bridge structural design with live BIM (Revit ↔ design ↔ writ
 
 ## Contributing
 
-Issues + PRs welcome. The calc engine is a separate service — schema docs at https://costaplanner.vercel.app/schema.
+Issues + PRs welcome. The calc engine is a separate service — schema docs at https://costaplanner-api.vercel.app/schema.
 
 For new tools that wrap additional Costaplanner endpoints, follow the existing pattern: define a Zod schema with engineering-friendly units (cm/m/ton/ton-m), convert to the costaplanner schema (mm/Roman-numeral zones) inside the handler.
 

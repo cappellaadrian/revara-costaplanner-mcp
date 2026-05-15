@@ -17,7 +17,7 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 
 const PATCH_VERSION = "2026-05-11-geotech-week1";
-const BASE_URL = process.env.COSTAPLANNER_BASE_URL || "https://costaplanner.vercel.app";
+const BASE_URL = process.env.COSTAPLANNER_BASE_URL || "https://costaplanner-api.vercel.app";
 
 console.error(`[REVARA costaplanner] starting -- patch ${PATCH_VERSION} -- base=${BASE_URL}`);
 
